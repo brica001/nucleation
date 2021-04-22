@@ -1,7 +1,9 @@
 # nucleation
 
 
-In this program we will be using scypi's odeint to sovle for the concentrations of capsid formation in a solution as a functon of time.
+In this program we will be using scypi's odeint to solve for the concentrations of capsid formation in a solution as a functon of time.
+
+##dCn/dt=J(n-1)-J(n)
 
 We are building a capsid of size q=72 subunits
 with a critical concentration Ccmc=0.2*10**(-6)Moles
