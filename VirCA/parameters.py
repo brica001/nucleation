@@ -13,7 +13,7 @@ A=[L*dL*(np.sqrt(n*(q-n))) for n in range(q)] ###total interaction area between 
 ## Binding rates
 ### Model based on effective Smoluchowski rate
 
-k=[A[n] for n in range(q)] #Relative to partial capsid, how many subunits pass through interaction area A (units of counts/second)
+k=[(D[n]/A[n]) for n in range(q)] #Relative to partial capsid, how many subunits pass through interaction area A (units of counts/second)
 
 #
 
@@ -25,8 +25,8 @@ plt.grid()
 plt.show()
 ## Decay rates
 
-a=np.exp(inp.Dg_hr)*(4*ct.pi*inp.Rc**2)
-
+#a=np.exp(inp.Dg_hr)*(4*ct.pi*inp.Rc**2)
+a=[0.1 for n in range(q)]
 a[0]=0
 
 # plt.plot(a)
