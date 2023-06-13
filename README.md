@@ -2,9 +2,7 @@
 
 
 In this program we will be using scypi's odeint to solve for the concentrations of capsid formation in a solution as a functon of time.
-
-# dCn/dt=J(n-1)-J(n)
-
+We use a modular programming schema for our simulation and label the main file as Virca.py, short for Viral capsid. An environment.py module is provided that contains all the dependencies used in our program for ease of use. There are 5 other modules included for a total of 7. Known values such as the boltzman constant, pi and a standard temperature of 293.15 K are contanined in the constants.py module. Dimensions.py contains reference units for S.I. fundamental dimensions to scale our simulation and contains Length, Energy, time, and concentration scales.inputs.py is the module that houses required user inputsto specify the sysm: number of subunits in the viral capsid q, mean binding energy of subunits in the completed capsid Dg,
 We are building a capsid of size q=72 subunits
 with a critical concentration Ccmc=0.2*10**(-6)Moles
 and a line tension alpha=2kT
